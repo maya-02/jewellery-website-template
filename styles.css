@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html {
+    display: block;
+}
+
+
+#page-wrapper {
+    position: relative;
+}
+
+div{
+    display:block;
+}
+
+header {
+    
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    font-size:20px;
+     position: fixed;
+     top: 0px;
+}
+
+body {
+    padding-top:255px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    color: #000080;
+    
+}
+
+.logo {
+    width: 60vw;
+}
+
+
+
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    font-weight:400;
+    color:#000080;
+
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+justify-content:space-around;
+}
+
+
+
+a {
+ 
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-size:20px;
+    
+
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+#hero > h2 {
+    margin-bottom: 20px;
+   word-wrap:break-word;
+ 
+}
+
+#hero input[type='email'] {
+    max-width: 400px;
+    width: 300px;
+    padding: 4px 8px;
+}
+
+.btn {
+    padding: 0 10px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px #000080 solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    font-size:20px;
+}
+
+#hero input[type='submit'] {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    margin: 25px 0;
+    border: 0;
+    background-color: #00BFFF;
+    color:#FFFFFF;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000080;
+    border-radius: 3px;
+    max-width:350px;
+  
+}
+
+.product > .level {
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:20px;
+}
+
+.product > h2 {
+    margin-top: 15px;
+    margin-bottom:10px;
+    
+}
+
+.product > ul > li {
+    padding: 5px 0; 
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #00BFFF;
+    font-weight: 500;
+    color:#fff;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #00BFFF;
+    padding: 20px;
+    color:#fff;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+span {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+@media (max-width: 650px){
+nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    
+}
+}
+
+@media (max-width: 650px){
+nav > ul {
+    flex-direction: column;
+}
+
+
+@media (max-width: 650px){
+ li {
+    margin-bottom:10px;
+}
+
+}
+
+@media (max-width: 600px){header {
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 650px){
+.logo > img {
+    margin: 0 auto;
+}
+}
+
+@media (max-width: 650px){
+#features {
+    margin-top: 0;
+}
+}
+
+@media (max-width: 550px){
+#features .icon {
+    display: none;
+}
+}
+
+@media (max-width: 550px){
+#features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+}
+}
+
+@media (max-width: 800px){
+.product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width: 800px){
+#pricing {
+    flex-direction: column;
+}
+}
